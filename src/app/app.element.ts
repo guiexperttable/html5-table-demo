@@ -5,6 +5,7 @@ import { EventAdapter, SimpleDomService, TableModelIf, TableOptions, TableScope 
 export class AppElement extends HTMLElement {
   public static observedAttributes = [];
 
+
   connectedCallback() {
     this.innerHTML = `<div
         class="container-div"
@@ -21,4 +22,4 @@ export class AppElement extends HTMLElement {
   }
 }
 
-customElements.define("demo-root", AppElement);
+customElements.define("html5-demo-root", AppElement);
